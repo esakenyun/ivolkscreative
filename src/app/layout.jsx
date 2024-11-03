@@ -1,6 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/section/Footer";
+import SmoothScrolling from "../components/scrolling/SmoothScrolling";
+import Footer from "./../components/section/Footer";
 
 const monserrat = Montserrat({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], style: ["normal", "italic"], subsets: ["latin"], display: "swap" });
 
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={monserrat.className}>
         <div className="flex flex-col min-h-screen">
-          <div>{children}</div>
+          <SmoothScrolling>{children}</SmoothScrolling>
           <Footer />
         </div>
       </body>
