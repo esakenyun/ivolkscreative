@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="py-10 bg-[#f7f7f7]">
+    <div id="contact" className="py-10 bg-[#f7f7f7]">
       <div className="flex flex-col md:flex-row justify-center gap-8 px-10 lg:px-20">
         <div className="w-full text-right">
           <p className="uppercase text-[#df334e] font-bold">Contact US</p>
@@ -21,13 +21,13 @@ export default function Contact() {
                 <p className="font-semibold">Name</p>
                 <span className="text-red-500">*</span>
               </div>
-              <div className="flex gap-5">
-                <div className="flex flex-col w-full">
-                  <input type="text" className="p-2 border border-gray-200 focus:border-gray-500" required />
+              <div className="flex gap-5 w-full">
+                <div className="flex flex-col md:w-full">
+                  <input type="text" className="p-2 border border-gray-200 focus:border-gray-500 w-full" required />
                   <p className="text-sm opacity-60">First</p>
                 </div>
-                <div className="flex flex-col w-full">
-                  <input type="text" className="p-2 border border-gray-200 focus:border-gray-500" required />
+                <div className="flex flex-col md:w-full">
+                  <input type="text" className="p-2 border border-gray-200 focus:border-gray-500 w-full" required />
                   <p className="text-sm opacity-60">Last</p>
                 </div>
               </div>

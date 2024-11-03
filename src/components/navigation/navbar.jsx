@@ -1,11 +1,22 @@
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaSearch } from "react-icons/fa";
+import { IoMenu } from "react-icons/io5";
+import ModalNavbarMobile from "../modal/NavbarMobile";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  const [logoSrc, setLogoSrc] = useState("/logo/logo_white.png");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const scrollNavbar = () => {
-    setNavbar(window.scrollY > 50);
+    if (window.scrollY > 50) {
+      setNavbar(true);
+      setLogoSrc("/logo/logo_black.png");
+    } else {
+      setNavbar(false);
+      setLogoSrc("/logo/logo_white.png");
+    }
   };
 
   useEffect(() => {
@@ -16,24 +27,32 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`${navbar ? "bg-white shadow-md" : "bg-transparent"} fixed top-0 w-full transition-all duration-300`}>
-      <nav className="container mx-auto px-6 py-5">
+    <header className={`${navbar ? "bg-primary-white shadow-md" : "bg-transparent"} fixed top-0 w-full transition-all duration-300 z-50`}>
+      <nav className="px-[3%] py-5">
         <div className="flex justify-between items-center">
-          <a href="#" className={`text-2xl font-bold ${navbar ? "text-[#df334e]" : "text-white"}`}>
-            Ivolks Creative
-          </a>
+          <Link href={"/"}>
+            <Image src={logoSrc} draggable="false" className="w-auto" width={100} height={100} priority alt="Ivolks Creative" />
+          </Link>
+          <div className="block md:hidden">
+            <button onClick={() => setIsModalOpen(true)}>
+              <IoMenu className={`text-3xl font-bold uppercase cursor-pointer ${navbar ? "text-gray-500" : "text-primary-white"} hover:text-primary-red`} />
+            </button>
+          </div>
           <div className="hidden md:flex items-center space-x-4">
-            {["Works", "About", "Services", "Community", "Contact"].map((item, index) => (
-              <a key={index} href="#" className={`font-bold uppercase cursor-pointer ${navbar ? "text-gray-600" : "text-white"} hover:text-blue-600`}>
-                {item}
-              </a>
+            {[
+              { title: "Home", href: "/" },
+              { title: "Works", href: "/works" },
+              { title: "About", href: "/about" },
+              { title: "Contact", href: "/contact" },
+            ].map((item, index) => (
+              <Link key={index} href={item.href} className={`text-lg font-bold uppercase cursor-pointer ${navbar ? "text-gray-500" : "text-primary-white"} hover:text-primary-red`}>
+                {item.title}
+              </Link>
             ))}
-            <a href="#" className={`font-bold uppercase ${navbar ? "text-gray-600" : "text-white"} hover:text-blue-600`}>
-              <FaSearch className="mt-0.5" />
-            </a>
           </div>
         </div>
       </nav>
+      <ModalNavbarMobile isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );
 }

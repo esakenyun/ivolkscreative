@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Cinta Separuh Jiwa",
+      "thumbnailUrl": "/thumbnail/cintaseparuhjiwa.jpg",
+      "link": "https://www.youtube.com/embed/aaiAm2Hp_1k?si=r4cbgfPkGnIc5pIx",
+      "category": "Music Video"
+    },
+    {
+      "id": 2,
+      "title": "Kau & Dia",
+      "thumbnailUrl": "/thumbnail/kaudandia.jpg",
+      "link": "https://www.youtube.com/embed/OwirIovwMoQ?si=2c9W62Z7-7acnONy",
+      "category": "Movie"
+    },
+    {
+      "id": 3,
+      "title": "Transition Bumper",
+      "thumbnailUrl": "/thumbnail/transitionbumper.jpg",
+      "link": "https://www.youtube.com/embed/ODupVm_qs54?si=ri4m3NhNonNX7WkE",
+      "category": "Motion Graphics"
+    },
+    {
+      "id": 4,
+      "title": "Semangat Zaman Now",
+      "thumbnailUrl": "/thumbnail/coba4.jpg",
+      "link": "https://www.youtube.com/embed/Z4_cyuYQStY?si=IWcplbocOcEWN_8l",
+      "category": "Music Video"
+    },
+    {
+      "id": 5,
+      "title": "Fiesta Ready to Serve",
+      "thumbnailUrl": "/thumbnail/fiesta.jpg",
+      "link": "https://www.youtube.com/embed/eKXDzfhxulY?si=gu9nhoD6i8gE7SVd",
+      "category": "Commercial"
+    },
+    {
+      "id": 6,
+      "title": "Product Launching",
+      "thumbnailUrl": "/thumbnail/klink.jpg",
+      "link": "https://www.youtube.com/embed/yQTFyWtR44c?si=3ThYocTSbTVS4eF2",
+      "category": "Corporate"
+    },
+    {
+      "id": 7,
+      "title": "Campina Gold Ribbon",
+      "thumbnailUrl": "/thumbnail/goldribbon.jpg",
+      "link": "https://www.youtube.com/embed/qvkPmJoI-TU?si=9HskTJM05wU-oBgq",
+      "category": "Commercial"
+    },
+    {
+      "id": 8,
+      "title": "Nongshim Bulgogi",
+      "thumbnailUrl": "/thumbnail/nongshimbulgogi.jpg",
+      "link": "https://www.youtube.com/embed/e5_YCeukpb0?si=p1Jl4LBj1F-Fu8Mq",
+      "category": "Commercial"
+    },
+    {
+      "id": 9,
+      "title": "Joint Offshore Patrol",
+      "thumbnailUrl": "/thumbnail/pgnsaka.jpg",
+      "link": "https://www.youtube.com/embed/SExtlH4jGJg?si=mwKhyrpl9QfN4xag",
+      "category": "Corporate"
+    },
+    {
+      "id": 10,
+      "title": "Pizza Hut Delivery",
+      "thumbnailUrl": "/thumbnail/phd.jpg",
+      "link": "https://www.youtube.com/embed/ciEsspUTg9g?si=D1KlQ3w0RlNFvVNG",
+      "category": "Motion Graphics"
+    },
+    {
+      "id": 11,
+      "title": "Proud UNTARIAN",
+      "thumbnailUrl": "/thumbnail/prouduntarian.jpg",
+      "link": "https://www.youtube.com/embed/mkPYGJRvSQM?si=iRS7arwNV3DOIOYG",
+      "category": "Corporate"
+    },
+    {
+      "id": 12,
+      "title": "BPJS",
+      "thumbnailUrl": "/thumbnail/bpjs.jpg",
+      "link": "https://www.youtube.com/embed/8W-1PK7g8G8?si=Ixu65qbbI1ulj3TW",
+      "category": "Corporate"
+    }
+  ]
+}
