@@ -44,8 +44,8 @@ export default function ContactPage() {
           priority
         />
         <div className="absolute inset-0 text-white flex flex-col justify-center px-[5%] md:px-[3%] lg:w-[48%]">
-          <h1 className="font-bold text-6xl lg:text-8xl uppercase">Let's Get In Touch!</h1>
-          <p className="lg:text-lg font-medium">If you have any questions or would like to reach out, please contact us using the form below. We’re here to help.</p>
+          <h1 className="font-bold text-6xl lg:text-8xl uppercase">Let&apos;s Get In Touch!</h1>
+          <p className="lg:text-lg font-medium">If you have any questions or would like to reach out, please contact us using the form below. We&apos;re here to help.</p>
         </div>
       </div>
       <div className="py-[8%] px-[5%] md:py-[5%] md:px-[3%] grid lg:grid-cols-2 gap-10 lg:gap-20">

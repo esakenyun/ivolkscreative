@@ -128,7 +128,7 @@ export default function AboutPage() {
               We provide all the creative needs from developing the idea, production, and post-studio. Such as making the film, advertising, campaign, video, graphic design, editing video offline/online, sound design, photography service,
               and many more. We are committed to delivering original work with professionalism and creativity.
             </p>
-            <p>Derived from the Indonesian word (Kita means us), we strive to work together to explore and create your ideas. We believe that crafting a story with engagement will strengthen the audience's values.</p>
+            <p>Derived from the Indonesian word (Kita means us), we strive to work together to explore and create your ideas. We believe that crafting a story with engagement will strengthen the audience&apos;s values.</p>
           </div>
           <div className="relative flex justify-center items-center">
             <div className="relative pl-8">
